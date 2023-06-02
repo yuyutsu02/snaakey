@@ -1,0 +1,37 @@
+body{
+    background-color: black;
+    width: 100vw;
+    height:100vh;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(-45deg, #000000, #006809, #000000, rgb(0, 74, 4));
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+
+}
+.canvas{
+    box-shadow: 0px 0px 12px green inset;
+    width: min(100vw,100vh);
+    height: min(100vw,100vh);
+    background-color: rgba(0, 0, 0, 0.684);
+    border-radius: 10px;
+}
+
+
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {background-position: 0% 50%;
+	}
+}
+
